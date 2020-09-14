@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  border: 3px solid #f1f1f1;
+  margin: auto;
+  max-width: 700px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+label {
+  font-weight: bold;
+}
+
+.container {
+  padding: 16px;
+}
+
+#title {
+  font-family: "bold";
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: black;
+}
+#description {
+  text-align: center;
+  font-family: "bold";
+  font-size: 30px;
+  color: white;
+/* text-decoration-line: underline;  */
+}
+body {
+  /* background-color: white(138, 138, 153); */
+  background: radial-gradient(crimson, skyblue);
+  font-size: 20px;
+}
+
+#email,
+#name,
+#number {
+  float: right;
+}
+input:focus {
+  background-color:lightsteelblue;
+}
+
+.submit{
+  text-align: center;
+  font-weight: 200;
+}

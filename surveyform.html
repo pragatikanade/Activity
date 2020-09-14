@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>Survey Form</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="surveyform.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"> This is the survey form.</p>
+
+  <div class="container">
+    <form>
+      <div class="container">
+        <div class="div">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required><br>
+        </div><br>
+
+        <div class="div">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your Email" required><br>
+        </div><br>
+
+        <div class="div">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input id="number" type="number" min="1" max="120" placeholder="Enter your age">
+        </div><br>
+
+        <div class="div">
+          <p>
+            <label for="d1">WWhat option best describes your current role?</label>
+
+
+            <select id="dropdown">
+              <option value="">Select Option</option>
+              <option value="1">Select rol1</option>
+              <option value="2">Select rol2</option>
+              <option value="3">Select rol3</option>
+              <option value="4">Select rol4</option>
+            </select>
+          </p>
+        </div><br>
+
+        <div class="div">
+          <label for="ans">Would you recommend freecodecamp to your friend?</label>
+          <p>
+            <input type="radio" name="ans" value="yes" checked> Yes<br>
+            <input type="radio" name="ans" value="no"> No<br>
+            <input type="radio" name="ans" value="maybe"> Maybe
+          </p>
+        </div>
+
+
+        <div class="div">
+          <p>
+
+          <div>
+            <label for="d2">What is your favourite feature from freecodecamp?</label>
+            <select id="dropdown">
+              <option value="">Select Option</option>
+              <option value="val1">Yes</option>
+              <option value="val1">No</option>
+              <option value="val1">Maybe</option>
+              <option value="val1">I don't know</option>
+            </select>
+          </div>
+
+
+          </p>
+        </div>
+
+        <div class="div">
+          <p>
+            <label for="checkbox">What you would like to improve?</label><br>
+            <input id="c1" type="checkbox" name="val1" value="val1">Frontend-projects<br>
+            <input id="c2" type="checkbox" name="val1" value="val2">Data Visualization<br>
+            <input id="c3" type="checkbox" name="val1" value="val3">Challenges<br>
+            <input id="c4" type="checkbox" name="val1" value="val4">Backend-projects<br>
+            <input id="c4" type="checkbox" name="val1" value="val5">Open Source Community<br>
+            <input id="c4" type="checkbox" name="val1" value="val6">Videos<br>
+            <input id="c4" type="checkbox" name="val1" value="val7">CityMeetups<br>
+          </p>
+        </div>
+
+        <div class="div">
+          <label for="comment">Any Comments or Suggestions? </label><br>
+          <textarea id="comment" name="comment" rows="5" cols="33">
+                </textarea>
+        </div><br>
+
+        <div class="submit">
+          <button type="submit" name="login">Login</button><br>
+        </div><br>
+
+      </div><br>
+
+    </form>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+<title></title>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="surveyform.css">
+
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"> This is the survey form.</p>
+  <form id="survey-form">
+    <fieldset>
+      <div class="div">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="div">
+        <label id="email-label" for="email">Name</label>
+        <input id="email" type="text" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="div">
+        <label id="number-label" for="number">Age (optional)</label>
+        <input id="number" type="number" min="1" max="120" placeholder="Enter your age">
+      </div>
+
+      <div class="div">
+        <p>
+          What option best describes your current role?
+          <select id="dropdown">
+            <option value="1">Select rol1</option>
+            <option value="2">Select rol2</option>
+            <option value="3">Select rol3</option>
+            <option value="4">Select rol4</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="div">
+        <label for="ans">Would you recommend freecodecamp to your friend?</label>
+        <p>
+          <input type="radio" name="ans" value="yes" checked> Yes<br>
+          <input type="radio" name="ans" value="no"> No<br>
+          <input type="radio" name="ans" value="maybe"> Maybe
+        </p>
+      </div>
+
+
+      <div class="div">
+        <p>
+          What is your favourite feature from freecodecamp?
+          <select id="dropdown">
+            <option value="1">Select val1</option>
+            <option value="2">Select val2</option>
+            <option value="3">Select val3</option>
+            <option value="4">Select val4</option>
+          </select>
+        </p>
+      </div>
+
+      <div class="div">
+        <p>
+          <label for="checkbox">What you would like to improve?</label>
+          <input id="c1" type="checkbox" name="val1" value="val1">Frontend-projects<br>
+          <input id="c2" type="checkbox" name="val1" value="val2">Data Visualization<br>
+          <input id="c3" type="checkbox" name="val1" value="val3">Challenges<br>
+          <input id="c4" type="checkbox" name="val1" value="val4">Backend-projects<br>
+          <input id="c4" type="checkbox" name="val1" value="val5">Open Source Community<br>
+          <input id="c4" type="checkbox" name="val1" value="val6">Videos<br>
+          <input id="c4" type="checkbox" name="val1" value="val7">CityMeetups<br>
+        </p>
+      </div>
+
+      <div class="div">
+        <label for="comment">Any Comments or Suggestions? </label>
+        <textarea id="comment" name="comment" rows="5" cols="33">
+        </textarea>
+      </div><br>
+
+      <div class="submit">
+        <button type="submit" name="login">Login</button><br>
+      </div>
+
+    </fieldset>
+
+  </form>
+</body>
+
+</html> -->
