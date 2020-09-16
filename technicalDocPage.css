@@ -10,7 +10,7 @@ body {
 #navbar {
   position: fixed;
   min-width: 290px;
-  top: 0px;
+  top: 10px;
   left: 0px;
   width: 200px;
   height: 100%;
@@ -61,6 +61,9 @@ header {
   padding: 20px;
   margin-bottom: 110px;
   font-size: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: end; */
 }
 
 section article {
@@ -73,34 +76,40 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
-@media only screen and (max-width: 815px) {
-  /* For mobile phones: */
+
+ @media only screen and (max-width: 815px) {
+ 
   #navbar ul {
     border: px solid;
-    height: 207px;
+    height: 300px;
   }
 
-  #navbar {
-    /* background-color: white; */
-    /* position: absolute; */
+   #navbar {
     top: 0;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 275px;
+    max-height: 300px;
     border: none;
     border-bottom: 2px solid;
+    position: 0;
+    margin-left: -10px;
+    /* margin:10px; */
   }
 
   #main-doc {
-    position: relative;
+    /* position: relative; */
+    padding: 10px;
     margin-left: 0px;
-    margin-top: 270px;
-  }
+    margin-top: 0%;
+  } 
 }
 
 @media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
   }
-}
+} 
+
+
+

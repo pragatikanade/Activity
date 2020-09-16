@@ -206,13 +206,16 @@ section {
 }
 
 .filler--contact {
-  background: url(work.png);
-  background-position: 40% 50%;
+  background: url(work.png)no-repeat;
+  margin-left: 60px;
+  /* background-position: 40% 50%; */
 }
 
 @media (max-height: 600px) {
   .container--filler-image {
     display: none;
+  /* background-position: 20% 30%; */
+
   }
 }
 
@@ -250,5 +253,24 @@ section {
     height: 150px;
     width: 150px;
   }
+  .filler--contact{
+    /* background-image: none; */
+    /* display: flex; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
+
+
+@media(max-width:700px)
+{
+  #navbar{
+    display: block;
+    height: 40px;
+    width:100px;
+    background-color: black;
+    /* display: column; */
+    
+  }
+}

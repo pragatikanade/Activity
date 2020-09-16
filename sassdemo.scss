@@ -1,0 +1,21 @@
+@font-face {
+ font-family: 'Dancing Script', cursive;
+  src: url(/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+$paracolor: black;
+$textcolor: white;
+$color: rgb(207, 207, 247);
+
+body {
+  background-color: $color;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+h1 {
+  color: $textcolor;
+}
+p {
+  color: $paracolor;
+ 
+}

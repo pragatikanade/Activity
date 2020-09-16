@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Dancing Script', cursive;
+  src: url(/Dancing_Script/static/DancingScript-Bold.ttf);
+}
+
+body {
+  background-color: #cfcff7;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: black;
+}
+/*# sourceMappingURL=sassdemo.css.map */
