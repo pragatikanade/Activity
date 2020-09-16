@@ -1,0 +1,123 @@
+.container {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-areas: "navbar main-doc";
+  grid-template-columns: 20% 80%;
+  height: 100%;
+  margin: 10px;
+}
+
+.container > * {
+  background-color: black;
+  opacity: 0.9;
+  font-size: 20px;
+}
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: white;
+}
+header {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: thick;
+}
+#main-doc header {
+  text-align: left;
+  margin: 5px;
+  padding-left: 30px;
+}
+
+#navbar ul {
+  height: 100%;
+  padding: 20px;
+  list-style: none;
+  margin-left: 30px;
+  /* position: fixed; */
+}
+#navbar li {
+  color: white;
+  text-decoration: none;
+  line-height: 3em;
+
+  width: 100%;
+}
+
+#navbar a {
+  /* display: grid; */
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+}
+section article {
+  color: white;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+section p {
+  color: white;
+}
+#main-doc {
+  grid-area: main-doc;
+  /* display: grid; */
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+#navbar a:hover {
+  color: cyan;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+#main-doc section:hover {
+  color: cyan;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+#main-doc header:hover {
+  color: cyan;
+  border-radius: 5px;
+}
+#navbar {
+  grid-area: navbar;
+  position: fixed;
+  height: 100%;
+}
+
+/* Media queries */
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "navbar"
+      "main-doc";
+    grid-template-rows: 20% 80%;
+    position: absolute;
+    display: block;
+  }
+  #navbar {
+    height: max-content;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  #navbar li {
+    font-size: 20px;
+  }
+  #navbar ul {
+    font-size: 30px;
+  }
+  #main-doc {
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 90%;
+  }
+}
